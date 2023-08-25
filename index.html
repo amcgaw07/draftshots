@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+    <meta
+      name="author"
+      content="Mark Otto, Jacob Thornton, and Bootstrap contributors"
+    />
+    <meta name="generator" content="Hugo 0.84.0" />
+    <title>Draft Drinks</title>
+
+    <link
+      rel="canonical"
+      href="https://getbootstrap.com/docs/5.0/examples/sign-in/"
+    />
+
+    <!-- Bootstrap core CSS -->
+    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+    <!-- Custom styles for this template -->
+    <link href="signin.css" rel="stylesheet" />
+  </head>
+  <!-- crying left right -->
+  <body class="text-center" id="body" onload="setup()">
+    <marquee
+      id="m1"
+      behavior="alternate"
+      scrollamount="30"
+      class="position-absolute"
+      ><img src="img/cry.gif" height="300px" width="300px"
+    /></marquee>
+    <!-- crying up down -->
+    <marquee
+      id="m2"
+      behavior="alternate"
+      direction="right"
+      scrollamount="60"
+      class="position-absolute"
+      ><img src="img/cry.gif" height="150px" width="150px"
+    /></marquee>
+    <main class="form-signin">
+      <form
+        class="requires-validation"
+        onsubmit="shot();return false"
+        id="myform"
+      >
+        <img
+          class="mb-4 rounded mx-auto d-block"
+          src="img/shotglass.webp"
+          alt=""
+          height="50%"
+          width="50%"
+        />
+        <!-- <input
+          type="text"
+          class="form-control text-center"
+          id="floatingPassword"
+          autocomplete="off"
+          required
+        /> -->
+        <!-- SELECT IMPLEMENTATION -->
+        <select
+        type="text"
+        class="form-control text-center"
+        id="floatingPassword"
+        autocomplete="off"
+        required
+        />
+        <option value="pick a player" selected></option>
+        </select>
+
+        <button class="w-100 btn btn-lg btn-primary" type="submit">
+          shot?
+        </button>
+        <!-- <p class="mt-5 mb-3 text-muted">&copy; 2023 Garfield Lasagna</p> -->
+      </form>
+    </main>
+  </body>
+  <script src="js/script.js"></script>
+</html>
